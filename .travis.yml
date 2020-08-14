@@ -54,6 +54,27 @@ matrix:
       arch: s390x
       env:
         - TOXENV=lint
+    - python: 3.6
+      arch: arm64
+      env:
+        - TOXENV=py36
+    - python: 3.7
+      arch: arm64
+      env:
+        - TOXENV=py37
+    - python: 3.8
+      arch: arm64
+      env:
+        - TOXENV=py38
+    - python: 3.8
+      arch: arm64
+      env:
+        - TOXENV=py38-pyhash
+
+    - python: 3.8
+      arch: arm64
+      env:
+        - TOXENV=lint
 
 env:
   - TOXENV=py27
